@@ -87,13 +87,15 @@
 
     // 优先加载 sucaiku/ 里的实际文件，然后尝试标准命名
     var tryImages = [
-      // 已放入的实际文件
-      '微信图片_20260714220939_32_9.png',
-      '微信图片_20260714220940_33_9.png',
+      // 当前 sucaiku/ 实际文件
+      'douyin_01.jpg',
+      'douyin_02.jpeg',
+      'douyin_03.jpeg',
+      'douyin_04.jpeg',
+      'douyin_05.jpeg',
+      'douyin_06.jpeg',
+      'douyin_08.jpeg',
       '微信图片_20260714220941_34_9.png',
-      '微信图片_20260714221815_40_9.jpg',
-      '微信图片_20260714221816_41_9.jpg',
-      '微信图片_20260714221817_42_9.jpg',
       '微信图片_20260714221818_43_9.jpg',
       '微信图片_20260714221819_44_9.jpg',
       // 备用标准命名
@@ -165,9 +167,9 @@
     }
 
     // Real images
-    var labels = ['门店实拍', '店内环境', '鲜切牛肉', '潮汕火锅', '牛肉特写', '菜品实拍', '蘸料搭配', '食客用餐'];
+    var labels = ['新鲜牛肉', '潮汕火锅', '特色菜品', '店内实拍', '招牌涮品', '美味蘸料', '店铺环境', '人气推荐', '吃货分享', '深夜食堂'];
     images.forEach(function (img, i) {
-      var label = labels[i] || ('图片 ' + (i + 1));
+      var label = labels[i] || ('实拍图 ' + (i + 1));
       var item = document.createElement('div');
       item.className = 'gallery-item';
       item.setAttribute('data-index', i);
