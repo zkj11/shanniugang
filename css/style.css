@@ -428,7 +428,8 @@ ul{list-style:none}
   padding:40px 20px;border-radius:var(--radius-lg);
   color:var(--white);
 }
-.douyin-icon{font-size:40px}
+.douyin-icon{font-size:40px;display:flex;align-items:center;justify-content:center}
+.icon-douyin{vertical-align:middle;margin-right:2px}
 .douyin-section h3{font-size:20px;margin:8px 0 4px}
 .douyin-section p{font-size:14px;opacity:.7;margin-bottom:18px}
 .douyin-btn{
